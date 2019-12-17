@@ -8,10 +8,9 @@ public class PersonModel {
 	private Integer age;
 	private Integer weight;
 	private String sex;
-	private String model;
+	private String diaperModel;
 	private MultipartFile photo;
-	
-	
+	private TableContentModel model;
 	
 	public Integer getAge() {
 		return age;
@@ -37,19 +36,27 @@ public class PersonModel {
 		this.sex = sex;
 	}
 	
-	public String getModel() {
-		return model;
-	}
-	
-	public void setModel(String model) {
-		this.model = model;
-	}
-	
 	public MultipartFile getPhoto() {
 		return photo;
 	}
 	
 	public void setPhoto(MultipartFile photo) {
 		this.photo = photo;
+	}
+
+	public String getDiaperModel() {
+		return diaperModel;
+	}
+
+	public void setDiaperModel(String diaperModel) {
+		this.diaperModel = diaperModel;
+	}
+
+	public TableContentModel getModel() {
+		return model;
+	}
+
+	public void setModel(TableContentModel model) {
+		this.model = model;
 	}
 }

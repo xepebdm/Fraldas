@@ -25,6 +25,12 @@ public class TesteHtml {
 				TableContentModel model = new TableContentModel(element.select("caption").text());
 				model.setContent(element.select("tbody tr th"));
 				
+				Elements rowElements = element.select(":not(thead) tr");
+				
+				for (int i = 0; i < rowElements.size(); i++) {
+//					model.getRow().get(i).setContent(rowElements.get(i).text());
+				}
+				
 //				String string = element.attributes().get("caption");
 //				System.out.println(string);
 			}
