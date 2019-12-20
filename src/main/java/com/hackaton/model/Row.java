@@ -1,29 +1,28 @@
 package com.hackaton.model;
 
-import java.util.List;
 
 public class Row {
 
-	private String text;
-	private List<String> content;
+	private String index;
+	private String content;
 	
-	public Row(String text){
-		this.text = text;
+	public Row(String index){
+		this.index = index;
 	}
 	
-	public String getText() {
-		return text;
+	public String getIndex() {
+		return index;
 	}
 	
 //	public void setText(String text) {
 //		this.text = text;
 //	}
 	
-	public List<String> getContent() {
+	public String getContent() {
 		return content;
 	}
 	
-	public void setContent(List<String> content) {
+	public void setContent(String content) {
 		this.content = content;
 	}
 	
