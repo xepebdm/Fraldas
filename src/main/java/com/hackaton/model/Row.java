@@ -1,30 +1,29 @@
 package com.hackaton.model;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Row {
 
 	private String index;
-	private String content;
+	private List<BigDecimal> content;
 	
 	public Row(String index){
 		this.index = index;
+		content = new ArrayList<>(10);
 	}
 	
 	public String getIndex() {
 		return index;
 	}
-	
-//	public void setText(String text) {
-//		this.text = text;
-//	}
-	
-	public String getContent() {
+
+	public List<BigDecimal> getContent() {
 		return content;
 	}
-	
-	public void setContent(String content) {
-		this.content = content;
+
+	public void addContent(BigDecimal value) {
+		content.add(value);
 	}
-	
 	
 }
