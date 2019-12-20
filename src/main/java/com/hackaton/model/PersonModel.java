@@ -5,28 +5,19 @@ import org.springframework.web.multipart.MultipartFile;
 public class PersonModel {
 
 	
-	private Integer age;
-	private Integer weight;
+	private Double age;
+	private Double weight;
+	
+	//VALUE OF THE ROW INDEX WHERE THE WEIGHT ARE 
+	private String rowIndex;
+	
+	//CHECK IF THE WEIGHT IS OK ( AGE AND WEIGHT IN THE SAME ROW-INDEX)
+	private boolean weightOk = false;
+	
 	private String sex;
 	private String diaperModel;
 	private MultipartFile photo;
 	private TableContentModel model;
-	
-	public Integer getAge() {
-		return age;
-	}
-	
-	public void setAge(Integer age) {
-		this.age = age;
-	}
-	
-	public Integer getWeight() {
-		return weight;
-	}
-	
-	public void setWeight(Integer weight) {
-		this.weight = weight;
-	}
 	
 	public String getSex() {
 		return sex;
@@ -58,5 +49,37 @@ public class PersonModel {
 
 	public void setModel(TableContentModel model) {
 		this.model = model;
+	}
+
+	public String getRowIndex() {
+		return rowIndex;
+	}
+
+	public void setRowIndex(String rowIndex) {
+		this.rowIndex = rowIndex;
+	}
+
+	public boolean isWeightOk() {
+		return weightOk;
+	}
+
+	public void setWeightOk(boolean weightOk) {
+		this.weightOk = weightOk;
+	}
+
+	public Double getAge() {
+		return age;
+	}
+
+	public void setAge(Double age) {
+		this.age = age;
+	}
+
+	public Double getWeight() {
+		return weight;
+	}
+
+	public void setWeight(Double weight) {
+		this.weight = weight;
 	}
 }

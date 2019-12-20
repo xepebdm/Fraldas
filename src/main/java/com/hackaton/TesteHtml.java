@@ -31,7 +31,7 @@ public class TesteHtml {
 				
 //				for (Element row : tableRowElements) {
 				for(int i = 0; i < tableRowElements.size(); i++) {
-					linhas.get(i).setContent(tableRowElements.get(i).text());
+//					linhas.get(i).setContent(tableRowElements.get(i).text());
 				}
 //					Elements rowItems = row.select("td");
 //					
